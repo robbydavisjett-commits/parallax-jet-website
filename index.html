@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Jet - Parallax Experience</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Hero Section - Jet Exterior -->
+    <section class="section hero" id="hero">
+        <div class="parallax-bg" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 600%22><defs><linearGradient id=%22sky%22 x1=%220%25%22 y1=%220%25%22 x2=%220%25%22 y2=%22100%25%22><stop offset=%220%25%22 style=%22stop-color:%231e3c72;stop-opacity:1%22 /><stop offset=%22100%25%22 style=%22stop-color:%232a5298;stop-opacity:1%22 /></linearGradient></defs><rect width=%221200%22 height=%22600%22 fill=%22url(%23sky)%22/></svg>')"></div>
+        <div class="content-wrapper">
+            <div class="jet-container">
+                <svg class="jet-svg" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Fuselage -->
+                    <ellipse cx="200" cy="100" rx="180" ry="45" fill="#333" stroke="#555" stroke-width="2"/>
+                    <!-- Cockpit -->
+                    <circle cx="50" cy="95" r="25" fill="#1a1a1a" stroke="#888" stroke-width="2"/>
+                    <circle cx="50" cy="95" r="20" fill="#222"/>
+                    <!-- Windows -->
+                    <circle cx="50" cy="92" r="8" fill="#87CEEB" opacity="0.8"/>
+                    <!-- Wings -->
+                    <polygon points="200,100 300,85 350,100 300,115" fill="#444" stroke="#555" stroke-width="2"/>
+                    <polygon points="200,100 100,85 50,100 100,115" fill="#444" stroke="#555" stroke-width="2"/>
+                    <!-- Tail -->
+                    <polygon points="360,95 380,85 385,100 380,115" fill="#555" stroke="#666" stroke-width="2"/>
+                    <!-- Landing gear -->
+                    <rect x="180" y="145" width="8" height="30" fill="#888"/>
+                    <rect x="210" y="145" width="8" height="30" fill="#888"/>
+                    <circle cx="184" cy="180" r="8" fill="#555"/>
+                    <circle cx="214" cy="180" r="8" fill="#555"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">Welcome Aboard</h1>
+            <p class="hero-subtitle">Scroll to enter the cabin</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>↓ Scroll</span>
+        </div>
+    </section>
+
+    <!-- Engine Section - Parallax -->
+    <section class="section engine" id="engine">
+        <div class="parallax-layer" data-speed="0.5">
+            <h2>Jet Engines</h2>
+            <div class="engine-visual">
+                <div class="engine-turbine">
+                    <div class="turbine-blade"></div>
+                    <div class="turbine-blade"></div>
+                    <div class="turbine-blade"></div>
+                </div>
+                <div class="engine-text">
+                    <p>Twin-turbofan engines produce over 50,000 lbs of thrust</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cockpit Section -->
+    <section class="section cockpit" id="cockpit">
+        <div class="parallax-layer" data-speed="0.5">
+            <h2>Flight Deck</h2>
+            <div class="cockpit-visual">
+                <div class="instrument-panel">
+                    <div class="instrument">
+                        <div class="gauge-needle"></div>
+                        <p>Altitude</p>
+                    </div>
+                    <div class="instrument">
+                        <div class="gauge-needle"></div>
+                        <p>Speed</p>
+                    </div>
+                    <div class="instrument">
+                        <div class="gauge-needle"></div>
+                        <p>Heading</p>
+                    </div>
+                </div>
+                <div class="cockpit-info">
+                    <p>Advanced avionics and automated flight systems ensure precision and safety at all altitudes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cabin Entry Section -->
+    <section class="section cabin-entry" id="cabin-entry">
+        <div class="parallax-layer" data-speed="0.5">
+            <h2>Entering the Cabin</h2>
+            <div class="cabin-door-visual">
+                <div class="cabin-door">
+                    <p>Welcome</p>
+                </div>
+                <p class="door-text">Click to open the cabin door</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Cabin Section -->
+    <section class="section main-cabin" id="main-cabin">
+        <div class="parallax-layer" data-speed="0.3">
+            <h2>Main Cabin</h2>
+            <div class="seats-visual">
+                <div class="seat-row">
+                    <div class="seat business"></div>
+                    <div class="seat business"></div>
+                    <div class="aisle"></div>
+                    <div class="seat business"></div>
+                    <div class="seat business"></div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat business"></div>
+                    <div class="seat business"></div>
+                    <div class="aisle"></div>
+                    <div class="seat business"></div>
+                    <div class="seat business"></div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+                <div class="seat-row">
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                    <div class="aisle"></div>
+                    <div class="seat"></div>
+                    <div class="seat"></div>
+                </div>
+            </div>
+            <div class="cabin-info">
+                <p>Spacious seating with premium comfort for long-haul flights. Advanced climate control maintains optimal cabin pressure and temperature.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Entertainment System Section -->
+    <section class="section entertainment" id="entertainment">
+        <div class="parallax-layer" data-speed="0.4">
+            <h2>In-Flight Entertainment</h2>
+            <div class="screens-visual">
+                <div class="screen">
+                    <div class="screen-content"></div>
+                </div>
+                <div class="screen">
+                    <div class="screen-content"></div>
+                </div>
+                <div class="screen">
+                    <div class="screen-content"></div>
+                </div>
+            </div>
+            <p class="entertainment-text">Enjoy thousands of movies, games, and live TV from your personal seatback screen</p>
+        </div>
+    </section>
+
+    <!-- Galley Section -->
+    <section class="section galley" id="galley">
+        <div class="parallax-layer" data-speed="0.5">
+            <h2>Galley</h2>
+            <div class="galley-visual">
+                <div class="cabinet"></div>
+                <div class="cabinet"></div>
+                <div class="cabinet"></div>
+                <p class="galley-text">Premium catering and beverage service throughout your journey</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lavatory Section -->
+    <section class="section lavatory" id="lavatory">
+        <div class="parallax-layer" data-speed="0.5">
+            <h2>Lavatory</h2>
+            <div class="lavatory-visual">
+                <div class="lavatory-door"></div>
+                <p class="lavatory-text">State-of-the-art facilities with vacuum waste systems</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Exit Section -->
+    <section class="section emergency" id="emergency">
+        <div class="parallax-layer" data-speed="0.3">
+            <h2>Safety First</h2>
+            <div class="safety-visual">
+                <div class="exit-sign">EXIT</div>
+                <p class="safety-text">Multiple emergency exits and advanced safety systems ensure passenger protection</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cargo Hold Section -->
+    <section class="section cargo" id="cargo">
+        <div class="parallax-layer" data-speed="0.6">
+            <h2>Cargo Hold</h2>
+            <div class="cargo-visual">
+                <div class="cargo-container"></div>
+                <div class="cargo-container"></div>
+                <div class="cargo-container"></div>
+                <p class="cargo-text">Advanced storage and pressurization for secure cargo transportation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Landing Section -->
+    <section class="section landing" id="landing">
+        <div class="parallax-layer" data-speed="0.4">
+            <h2>Descent & Landing</h2>
+            <div class="landing-visual">
+                <div class="horizon-line"></div>
+                <div class="runway"></div>
+                <p class="landing-text">Thank you for flying with us. We hope you had a wonderful journey.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Interactive Jet Experience. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
